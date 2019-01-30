@@ -531,6 +531,11 @@ a {
 /*tablet resoponsive*/
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
 
+    html,
+    body {
+        width: 100%;
+    }
+
     .contactInner,
     .navInner,
     .anavBarInner {
@@ -540,19 +545,42 @@ a {
     .navLeft ul .navLeftEdit {
         display: none;
     }
-    .navRight{
+
+    .navRight {
         float: left;
     }
+
     .sideBar {
         float: right;
         display: inline-block;
     }
 
-    .sideBar:hover+.anavBar {
+    .sideBar:hover + .anavBar {
         display: block;
     }
 
     .anavBar {
         display: none;
+    }
+
+    .chooseInner {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 80px;
+
+    }
+
+    .stuffedGrid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+        margin-top: 50px;
+        grid-column-gap: 25px;grid-row-gap: 25px;
+
     }
 }
