@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+}
+
+.home {
+    width: 100%;
+    height: 95%;
+    background-image: url(../images/5baddd4835e113c6299a48f5_li-tzuni-507346-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.contact {
+    width: 100%;
+    background-color: #A5C926;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.contactInner {
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+.contactContent {
+    float: left;
+    overflow: auto;
+}
+
+.contact p {
+    display: inline-block;
+    padding: 10px 20px 10px 0;
+}
+
+.email {
+    text-decoration: underline;
+}
+
+.contactIcons {
+    float: right;
+    overflow: auto;
+}
+
+.contactIcons ul {
+    overflow: auto;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 10px;
+    float: left;
+    color: #fff;
+}
+
+.contact ul {
+    overflow: hidden;
+}
+
+.contact ul li:hover {
+    transform: scale(1.5);
+    overflow: hidden;
+}
+
+a {
+    font-family:
+        "Open Sans", sans-serif;
+}
+
+.contact a {
+    color: #fff;
+}
+
+.contact a:hover {
+    border-radius: 50%;
+    text-shadow: 0px 0px 12px grey;
+    transition: 1s all;
+}
+
+/*navbar Portion*/
+
+.navBar,
+.anavBar {
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    overflow: auto;
+}
+
+.anavBar {
+    display: none;
+    background-color: #fff;
+}
+
+.anavBar ul li {
+    padding: 10px 5px !important;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    color: #333;
+}
+
+.anavBarInner {
+    width: 80%;
+    margin: auto;
+}
+
+.navLeft {
+    float: left;
+    width: 80%;
+}
+
+.navRight {
+    float: right;
+}
+
+.navRight li a {
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: center;
+}
+
+.navEdit {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #A5C926;
+    border-radius: 50%;
+    color: white;
+}
+
+
+.navBar ul {
+    overflow: auto;
+    position: relative;
+}
+
+.navLeft ul .navLeftEdit {
+    margin-top: 7px;
+}
+
+.navBar ul li {
+    padding: 0;
+
+}
+
+.navInner {
+    overflow: auto;
+    width: 80%;
+    margin: auto;
+}
+
+.navBar a {
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 20px;
+    font-size: 15px;
+}
+
+.navBar a:hover {
+    text-decoration: underline;
+}
+
+.sideBar {
+    padding: 18px 0 !important;
+    margin-left: 10px;
+    display: none;
+    float: right;
+}
+
+.sideBar .span {
+    height: 3px;
+    margin-top: 4px;
+    width: 20px;
+    background-color: black;
+}
+
+.heading {
+    font-weight: 400;
+    font-size: 25px !important;
+    padding-left: 0 !important;
+    padding-right: 30px !important;
+}
+
+/*home middle portion*/
+
+.homeMiddle {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    padding: 50px 70px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.homeMiddleEdit {
+    color: #A5C926;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.homeMiddle h2 {
+    margin-top: 20px;
+    font-size: 40px;
+    line-height: 1.3;
+    font-weight: 200;
+}
+
+.homeMiddle a {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #A5C926;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    transition: .5s all;
+}
+
+.homeMiddle a:hover {
+    transform: scale(1.1);
+    transition: .5s all;
+    box-shadow: 0 8px 8px -4px rgba(165, 201, 38, .5);
+}
+
+
+/*aimation portion*/
+.animation {
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    box-shadow: 0px 1px 1px 0px lightgrey;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.mouse {
+    width: 25px;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    border: 2px solid #d1d0d0;
+    border-radius: 20px;
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: #d1d0d0;
+    margin: auto;
+    transform: translateY(5px);
+    border-radius: 50%;
+    animation-name: dot;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes dot {
+    0% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+}
+
+
+
+/*choose part*/
+
+.choose {
+    width: 100%;
+    padding: 180px 0 100px 0;
+    background-color: #f8f8f8;
+}
+
+.chooseInner {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+
+}
+
+.chooseOne {
+    background-color: #FFC12C;
+    position: relative;
+    border-radius: 20px;
+
+}
+
+.chooseOne img {
+    position: relative;
+    top: -60px;
+    float: left;
+}
+
+.middleEdit {
+    float: right !important;
+}
+
+.chooseRight {
+    position: relative;
+    left: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.secondRight {
+    float: right;
+    left: -20px;
+}
+
+.chooseRight h3 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.chooseRight a {
+    margin: 15px 0;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 13px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    transition: .5s all;
+}
+
+.chooseRight a:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 3px 10px 0px hsla(0, 0%, 7%, .2);
+    transition: .5s all;
+}
+
+/*stuffed part*/
+
+.stuffed {
+    width: 100%;
+    padding: 0 0 50px 0;
+    background-color: #f8f8f8;
+}
+
+.stuffedMain {
+    width: 80%;
+    margin: auto;
+}
+
+.stuffedMain h2 {
+    color: #111;
+    font-size: 28px;
+    font-weight: 400;
+    float: left;
+}
+
+.stuffedMain .stuffedContent > a {
+    padding: 5px 0;
+    float: right;
+    font-size: 13px;
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid lightgrey;
+    margin-right: 10px;
+}
+
+.stuffedMain .stuffedContent > a:hover {
+    border-bottom: 2px solid #A5C926;
+    transition: .3s all;
+}
+
+.stuffedMain .stuffedContent > a:hover .fas {
+    transform: translateX(5px);
+    transition: .3s;
+}
+
+.stuffedMain .fas {
+    margin-left: 5px;
+}
+
+.stuffedContent {
+    overflow: auto;
+}
+
+.underline {
+    margin-top: 40px;
+    height: 2.5px;
+    background-color: lightgrey;
+    width: 100%;
+}
+
+.underlineInner {
+    width: 12%;
+    height: 100%;
+    background-color: #A5C926;
+}
+
+.stuffedGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    grid-column-gap: 25px;
+
+}
+
+.stuffedGridPart {
+    box-shadow: 0 0 3px 0 lightgrey;
+    background-color: #fff;
+    padding: 35px 0;
+    text-align: center;
+    border-radius: 15px;
+    transition: .3s all;
+}
+
+.stuffedGridPart a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #111;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.stuffedGridPart:hover {
+
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px 0 lightgrey;
+    transition: .3s all;
+}
+
+.stuffedGridPart a h4 {
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.stuffedButton {
+    background-color: #A5C926;
+    color: #fff;
+    font-size: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.stuffed2 {
+    margin-top: 50px;
+}
+
+/*background attachment part*/
+
+.stuffedAttachement {
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../images/5baf3d57ace69c149bb331b8_tim-gouw-165547-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 60px 0;
+    color: #fff;
+    line-height: 2;
+}
+
+.stuffedAttachement p {
+    width: 60%;
+    margin: auto;
+    line-height: 1.3;
+}
+
+.stuffedAttachement a {
+    color: #fff;
+    background-color: #A5C926;
+    padding: 15px 25px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 20px;
+    transition: .3s;
+}
+
+.stuffedAttachement a:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+
+
+
+
+
+
+
+
+/*responsive part*/
+
+/*tablet resoponsive*/
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+    .contactInner,
+    .navInner,
+    .anavBarInner {
+        width: 95%;
+    }
+
+    .navLeft ul .navLeftEdit {
+        display: none;
+    }
+    .navRight{
+        float: left;
+    }
+    .sideBar {
+        float: right;
+        display: inline-block;
+    }
+
+    .sideBar:hover+.anavBar {
+        display: block;
+    }
+
+    .anavBar {
+        display: none;
+    }
+}
