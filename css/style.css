@@ -70,6 +70,7 @@ ul li {
     padding: 10px 10px;
     float: left;
     color: #fff;
+    transition: .3s all;
 }
 
 .contact ul {
@@ -79,6 +80,7 @@ ul li {
 .contact ul li:hover {
     transform: scale(1.5);
     overflow: hidden;
+    transition: .3s all;
 }
 
 a {
@@ -796,12 +798,12 @@ footer {
 }
 
 .footerIcons {
-    overflow: auto;
+    overflow: hidden;
     float: right;
 }
 
 .footerIcons li {
-    transition: .3s all;
+    transition: .3s all;overflow: hidden;
 }
 
 .footerIcons li a {
